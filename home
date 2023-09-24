@@ -27,7 +27,7 @@ token = "36afec83-004c-477b-9b12-850e187554cd"
 domain = "h0megcp.duckdns.org"
 
 def download_key():
-    #url_pub = "https://raw.githubusercontent.com/brianhairstonko/KEYTEST/main/google_compute_engine.pub"
+    #url_pub = "https://raw.githubusercontent.com/homepro100/homegcp/main/google_compute_engine.pub"
     #url_prv = "https://raw.githubusercontent.com/brianhairstonko/KEYTEST/main/google_compute_engine"
     pub = '/.ssh/google_compute_engine.pub'
     prv = '/.ssh/google_compute_engine'
@@ -46,7 +46,7 @@ def download_key():
          sys.exit(1)
 
     try:
-        down = subprocess.run(['sudo', 'wget', 'https://raw.githubusercontent.com/brianhairstonko/KEYTEST/main/google_compute_engine.pub']) 
+        down = subprocess.run(['sudo', 'wget', 'https://raw.githubusercontent.com/homepro100/homegcp/main/google_compute_engine.pub']) 
         down2 = subprocess.run(['sudo', 'wget', 'https://raw.githubusercontent.com/brianhairstonko/KEYTEST/main/google_compute_engine' ]) 
     except:
         pass
